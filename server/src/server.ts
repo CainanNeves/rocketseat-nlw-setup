@@ -1,15 +1,14 @@
 //Back-end API RESTful
 //fastify no lugar do express
 
-import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { PrismaClient } from "@prisma/client";
+import Fastify from "fastify";
+import { appRoutes } from "./routes";
 
 const app = Fastify();
-const prisma = new PrismaClient();
 
 app.register(cors);
-
+app.register(appRoutes);
 /**
  * Metodos HTTP: Get, Post, Put, Patch, Delete
  * Get: Pegar informacoes (So o que da pra fazer pelos navegadores)
@@ -18,12 +17,6 @@ app.register(cors);
  * Patch: Pequenas atualizacoes na informacao?
  * Delete: Deletar recurso no backend
  */
-
-app.get("/", async () => {
-  const habits = await prisma.habit.findMany();
-
-  return habits;
-});
 
 app
   .listen({

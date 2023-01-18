@@ -42,7 +42,8 @@ model HabitWeekDays {
 
 model Day {
   id   String   @id @default(uuid())
-  date DateTime //so tem registro quando completar ao menos um habito
+  date DateTime
+  //so tem registro quando completar ao menos um habito
 
   dayHabits DayHabit[]
 

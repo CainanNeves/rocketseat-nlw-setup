@@ -29,3 +29,13 @@ provider = "prisma-erd-generator"
 }
 
 npx prisma generate
+
+ativar a seed no db
+criar o arquivo, alterr pachage.json
+npx prisma db seed
+
+ZOD PARA VALIDACAO
+npm i zod
+
+dayjs pra trabalhar com datas enquanto nao sai a nova api de datas no typescrypt temporal api
+npm i dayjs
