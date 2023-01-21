@@ -26,3 +26,8 @@ Main css(styles/global.css)
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+RadixUi para trabalhar com acessibilidade
+
+npm i clsx
+recebe as classes como parametro se for so texto ela sempre aplica, se enviar um objeto vc diz o {style: a condicao}
