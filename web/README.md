@@ -18,7 +18,7 @@ autoprefixer: {},
 tailwind.config.js
 
 Content
-'./src/\*_/_.tsx',
+'./src/**/*.tsx',
 './index.html'
 
 Main css(styles/global.css)
